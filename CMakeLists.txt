@@ -34,6 +34,7 @@ set(ASSIMP_LIBRARY_RELEASE assimp CACHE STRING "" FORCE)
 # 5.0.1 this option is prefixed with ASSIMP_, so better set both variants.
 set(INJECT_DEBUG_POSTFIX OFF CACHE BOOL "" FORCE)
 set(ASSIMP_INJECT_DEBUG_POSTFIX OFF CACHE BOOL "" FORCE)
+set(BUILD_SHARED_LIBS OFF CACHE BOOL "" FORCE)
 add_subdirectory(assimp EXCLUDE_FROM_ALL)
 add_library(Assimp::Assimp ALIAS assimp)
 
